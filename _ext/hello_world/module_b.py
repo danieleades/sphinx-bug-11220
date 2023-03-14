@@ -13,13 +13,13 @@ def visit_node(_self: nodes.GenericNodeVisitor, _node: nodes.Node) -> None:
 def depart_node(_self: nodes.GenericNodeVisitor, _node: nodes.Node) -> None:
     pass
 
-class Node(nodes.General, nodes.Element):
+class NodeB(nodes.General, nodes.Element):
     pass
 
 
 def register(app: Sphinx) -> None:
     app.add_node(
-        Node,
+        NodeB,
         html=(visit_node, depart_node),
         latex=(visit_node, depart_node),
         text=(visit_node, depart_node),

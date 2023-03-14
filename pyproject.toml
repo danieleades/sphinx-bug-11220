@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "sphinx-11220"
+version = "0.1.0"
+description = ""
+authors = ["Daniel Eades <danieleades@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "sphinx_11220", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sphinx = "^6.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
